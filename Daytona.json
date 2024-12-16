@@ -1,0 +1,20 @@
+{
+    "environments": {
+      "development": {
+        "MONGO_URI": "mongodb://localhost:27017/graphql-api",
+        "PORT": "4000",
+        "JWT_SECRET": "dev_secret_key"
+      },
+      "staging": {
+        "MONGO_URI": "mongodb+srv://staging_db_url/graphql-api",
+        "PORT": "5000",
+        "JWT_SECRET": "staging_secret_key"
+      },
+      "production": {
+        "MONGO_URI": "mongodb+srv://production_db_url/graphql-api",
+        "PORT": "8000",
+        "JWT_SECRET": "prod_secret_key"
+      }
+    }
+  }
+  
