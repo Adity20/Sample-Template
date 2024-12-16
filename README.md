@@ -1,70 +1,105 @@
-<h1 align="center">Effective Scrapper</h1>
+<h1 align="center">GraphQL API with Fine-Grained Access Control</h1>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white">
   <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white">
-  <img src="https://github.com/PRASUN-SITAULA/carbonWise/assets/89672957/106f3a07-d14a-4ee9-9e0c-c8cfbc635a79">
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white">
+  <img src="https://img.shields.io/badge/Daytona-00A8E8?style=for-the-badge">
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white">
 </p>
 
-# Sample Javascript with React and NodeJs
+---
 
-# Description
-Effective Scrapper is a web application designed to simplify the job search process for individuals interested in roles within the technology industry. Leveraging the power of web scraping , Effective Scrapper provides users with a streamlined interface to explore job listings tailored to three key categories: Software Engineer, UI Designer, and Hardware Engineer.
-Daytona is used as a development environment manager to streamline the development process.
+## Description
+
+This project demonstrates how to create a **GraphQL API** with fine-grained access control on your database using **Node.js**, **Express.js**, **Apollo Server**, and **MongoDB**. The project integrates **Daytona** for streamlined development environment management, making it easier to handle environment-specific configurations and secrets.
+
+---
 
 ## Table of Contents
 
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Features](#features)
-- [Demo](#demo)
 - [Technologies](#technologies)
+- [Demo](#demo)
 - [License](#license)
 
+---
+
+## Features
+
+- **GraphQL API**: A robust API with query, mutation, and subscription support.
+- **Access Control**: Fine-grained access controls implemented at the resolver level to ensure secure data operations.
+- **Environment Management**: Powered by Daytona to handle development, staging, and production configurations seamlessly.
+- **MongoDB Integration**: Utilized as the database to store and retrieve data efficiently.
+
+---
 
 ## Getting Started
 
 ### Open Using Daytona
 
 1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).
+
 2. **Create the Workspace**:
    ```bash
-   daytona create https://github.com/daytonaio/sample-js-job-scaper
+   daytona create https://github.com/Adity20/Sample-Template
    ```
-3. In Text Editor/IDE, Add 8000 as forwarded port.
-3. **Start the Application**:
-  Go to backend Folder
-   ```bash
-   npm start
-   ```
-    Go to frontend Folder
-    ```bash
-    npm run dev
-    ```
 
-## Features
+### Add Forwarded Port
 
-**Scraping Capability**: careerQuest utilizes browserless to efficiently scrape job listings from indeed, ensuring coverage of available opportunities.
+In your Text Editor/IDE, add 4000 as the forwarded port.
 
-**Categorized Listings**: Jobs are categorized into three main categories - Software Engineer, UI Designer, and Hardware Engineer, making it easy for users to find roles that match their skills and interests.
+### Start the Application
 
-**User-Friendly Interface**: The web app has a user interface, allowing users to effortlessly navigate through job listings and explore details such as job title, company, location, and job description.
+Navigate to the project root and run the following commands:
 
-## Demo
-<video src="https://github.com/PRASUN-SITAULA/careerQuest/assets/89672957/337f53d9-60d8-4822-89bc-d8edbc0a09a1"></video>
+```bash
+daytona use development
+```
 
+Start the server:
+
+```bash
+node src/server.js
+```
 
 ## Technologies
 
 This project is built using the following technologies:
-- Daytona: Development Environment Manager.
-- React: Frontend library for building user interfaces.
-- Vite: Frontend build tool for faster development.
-- Tailwind CSS: Utility-first CSS framework for styling.
-- Express: Backend framework for handling server-side logic.
 
+- **Node.js**: JavaScript runtime for the server-side application.
+- **Apollo Server**: GraphQL server for creating schemas and resolvers.
+- **Express.js**: Lightweight backend framework for integrating middleware and routing.
+- **MongoDB**: NoSQL database for data persistence.
+- **Daytona**: Development environment manager for seamless configuration and secrets management.
+- **Dotenv**: Environment variable management for fallback configurations.
+
+## Demo
+
+Here’s a video walkthrough of the application:
+
+<video src="https://github.com/your-username/your-repository-name/assets/demo-video"></video>
+
+## Project Structure
+
+```plaintext
+graphql-api-project/
+├── src/
+│   ├── schema/
+│   │   ├── typeDefs.js        # GraphQL schema definitions
+│   │   ├── resolvers.js       # Resolver logic
+│   ├── utils/
+│   │   ├── auth.js            # Middleware for authentication
+│   ├── server.js              # Entry point for the server
+│   ├── daytona.json           # Daytona configuration
+├── package.json               # Project dependencies
+├── .env                       # Environment variables (Daytona-enabled)
+├── README.md                  # Documentation
+```
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
