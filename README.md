@@ -79,7 +79,7 @@ This project is built using the following technologies:
 
 Here’s a video walkthrough of the application:
 
-<video src="https://github.com/your-username/your-repository-name/assets/demo-video"></video>
+<video src="https://github.com/Adity20/Sample-Template/blob/main/WhatsApp%20Video%202024-12-17%20at%2000.05.09_2c554090.mp4"></video>
 
 ## Project Structure
 
